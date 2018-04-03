@@ -1,0 +1,38 @@
+
+<h1> Welcome to the Currency Exchange </h1>
+
+
+<script type = "text/javascript" src="  javascript.js">
+function outputMoney() {
+var initInput = document.getElementById("initInput")
+var moneyOutput = document.getElementById("moneyOutput")
+var money = initInput.value
+moneyOutput.value =  money * 2
+}
+</script>
+<div>
+<form action = "/action_page.php">
+  <select name="initCurrencyList">
+    <option value="USD"> USD ($)</option>
+    <option value="EURO"> EUR (&#x20AC;)</option>
+    <option value="GBP"> GBP (&#x20A4;)</option>
+    <option value="HKD"> HKD (HK$)</option>
+  </select>
+<br>
+<form action = "/action_page.php">
+  <select name="outputCurrencyList">
+  <option value="USD"> USD ($)</option>
+  <option value="EURO"> EUR (&#x20AC;)</option>
+  <option value="GBP"> GBP (&#x20A4;)</option>
+  <option value="HKD"> HKD (HK$)</option>
+</select>
+</div>
+<div>
+<form>
+  <fieldset>
+  <label>Amount of money:</label>
+  <input type="number" id="initInput"/>
+  <input type = "number" id= "moneyOutput"/>
+</fieldset>
+</form>
+</div>
